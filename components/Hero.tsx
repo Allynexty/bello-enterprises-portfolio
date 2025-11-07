@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-bello-blue opacity-70"></div>
       </div>
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-48 text-center">
-        <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight mb-4">
+        <h1 className="text-4xl md:text-6xl font-extrabold font-heading tracking-tight leading-tight mb-4">
           Global Trade & Supply Chain Solutions
         </h1>
         <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-200">
@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
                 e.preventDefault();
                 document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
             }}
-            className="inline-block bg-bello-red hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
+            className="inline-block bg-bello-red hover:bg-red-700 text-white font-bold font-heading py-3 px-8 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
           >
             Get a Quote
           </a>

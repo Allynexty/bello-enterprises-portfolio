@@ -31,7 +31,7 @@ const Header: React.FC = () => {
           <div className="flex items-center">
             <a href="#home" onClick={(e) => handleScroll(e, '#home')} className="flex items-center space-x-2">
               <Logo />
-              <span className="hidden sm:block text-xl font-bold text-bello-blue">T. Bello Enterprises</span>
+              <span className="hidden sm:block text-xl font-bold font-heading text-bello-blue">T. Bello Enterprises</span>
             </a>
           </div>
           <nav className="hidden md:flex space-x-8">

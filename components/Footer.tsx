@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
                 <div className="bg-white rounded-full p-1">
                     <Logo />
                 </div>
-                <span className="text-xl font-bold">T. Bello Enterprises Int'l</span>
+                <span className="text-xl font-bold font-heading">T. Bello Enterprises Int'l</span>
             </a>
           </div>
           <div className="mt-8 md:mt-0 md:order-2 md:w-1/3 text-center">

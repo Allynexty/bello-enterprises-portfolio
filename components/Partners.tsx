@@ -3,11 +3,11 @@ import { PARTNERS_DATA } from '../constants';
 
 const Partners: React.FC = () => {
   return (
-    <section id="partners" className="py-20 bg-white">
+    <section id="partners" className="py-20 bg-bello-light-blue">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-bello-blue">Our Trusted Partners</h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold font-heading text-bello-blue">Our Trusted Partners</h2>
+          <p className="mt-4 text-lg text-bello-dark-gray max-w-3xl mx-auto">
             We are proud to collaborate with industry leaders and key players.
           </p>
         </div>

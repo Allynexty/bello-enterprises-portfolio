@@ -3,25 +3,25 @@ import React from 'react';
 
 const Contact: React.FC = () => {
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-20 bg-bello-light-blue">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-bello-blue">Get In Touch</h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold font-heading text-bello-blue">Get In Touch</h2>
+          <p className="mt-4 text-lg text-bello-dark-gray max-w-3xl mx-auto">
             We're ready to discuss your next project. Contact us today for proposals and inquiries.
           </p>
         </div>
         <div className="grid lg:grid-cols-2 gap-12">
-          <div className="bg-gray-50 p-8 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-6">Contact Information</h3>
+          <div className="bg-white p-8 rounded-lg shadow-lg">
+            <h3 className="text-2xl font-semibold font-heading text-bello-blue mb-6">Contact Information</h3>
             <div className="space-y-6">
               <InfoItem icon={<LocationIcon />} title="Head Office" lines={['21, Princess Street,', 'Lagos Island, Lagos State.']} />
               <InfoItem icon={<PhoneIcon />} title="Telephone" lines={['+234 818 813 3006', '+234 803 354 1514']} />
               <InfoItem icon={<MailIcon />} title="Email" lines={['bellogbemisola181@yahoo.com']} isEmail />
             </div>
           </div>
-          <div className="bg-gray-50 p-8 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-6">Send us a Message</h3>
+          <div className="bg-white p-8 rounded-lg shadow-lg">
+            <h3 className="text-2xl font-semibold font-heading text-bello-blue mb-6">Send us a Message</h3>
             <form action="#" method="POST" className="space-y-6">
               <div>
                 <label htmlFor="name" className="sr-only">Full name</label>
@@ -67,11 +67,11 @@ const InfoItem: React.FC<InfoItemProps> = ({ icon, title, lines, isEmail = false
             </div>
         </div>
         <div className="ml-4">
-            <h4 className="text-lg leading-6 font-medium text-gray-900">{title}</h4>
+            <h4 className="text-lg leading-6 font-medium text-bello-blue">{title}</h4>
             {lines.map((line, i) => (
                 isEmail ? 
                 <a key={i} href={`mailto:${line}`} className="mt-1 text-base text-bello-blue hover:text-bello-red">{line}</a>
-                : <p key={i} className="mt-1 text-base text-gray-600">{line}</p>
+                : <p key={i} className="mt-1 text-base text-bello-dark-gray">{line}</p>
             ))}
         </div>
     </div>
