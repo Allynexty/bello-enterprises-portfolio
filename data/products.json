@@ -1,0 +1,193 @@
+{
+  "products": [
+    {
+      "id": "office-001",
+      "name": "Ergonomic Office Chair",
+      "category": "office",
+      "price": "$299.99",
+      "image": "/placeholder.svg?height=300&width=300",
+      "description": "High-back ergonomic office chair with lumbar support and adjustable armrests.",
+      "specifications": ["Lumbar support", "Adjustable height", "360° swivel", "5-year warranty"]
+    },
+    {
+      "id": "office-002",
+      "name": "Standing Desk Frame",
+      "category": "office",
+      "price": "$449.99",
+      "image": "/placeholder.svg?height=300&width=300",
+      "description": "Motorized standing desk frame with memory presets and smooth operation.",
+      "specifications": ["Electric motor", "Memory presets", "Quiet operation", "20-year lifespan"]
+    },
+    {
+      "id": "office-003",
+      "name": "Multi-function Printer",
+      "category": "office",
+      "price": "$699.99",
+      "image": "/placeholder.svg?height=300&width=300",
+      "description": "Professional-grade color laser printer with scanning and copying capabilities.",
+      "specifications": ["Print speed: 35ppm", "Auto-duplex", "Network ready", "OEM authorized"]
+    },
+    {
+      "id": "office-004",
+      "name": "Executive Conference Table",
+      "category": "office",
+      "price": "$1,299.99",
+      "image": "/placeholder.svg?height=300&width=300",
+      "description": "Premium hardwood conference table suitable for large meeting rooms.",
+      "specifications": ["Seats 10-12", "Integrated cable management", "Customizable", "Free setup"]
+    },
+    {
+      "id": "office-005",
+      "name": "Vertical File Cabinet",
+      "category": "office",
+      "price": "$399.99",
+      "image": "/placeholder.svg?height=300&width=300",
+      "description": "4-drawer vertical file cabinet with security lock and smooth drawer glides.",
+      "specifications": ["Locking mechanism", "Fits legal/letter size", "Steel construction", "Lifetime warranty"]
+    },
+    {
+      "id": "office-006",
+      "name": "LED Desk Lamp",
+      "category": "office",
+      "price": "$89.99",
+      "image": "/placeholder.svg?height=300&width=300",
+      "description": "Adjustable LED desk lamp with USB charging port and touch controls.",
+      "specifications": ["3 brightness levels", "USB charging", "Memory foam base", "Energy efficient"]
+    },
+    {
+      "id": "safety-001",
+      "name": "Hard Hat - Safety Yellow",
+      "category": "safety",
+      "price": "$24.99",
+      "image": "/placeholder.svg?height=300&width=300",
+      "description": "ANSI/OSHA compliant hard hat with four-point suspension system.",
+      "specifications": ["ANSI Z89.1 certified", "Lightweight", "UV resistant", "Adjustable fit"]
+    },
+    {
+      "id": "safety-002",
+      "name": "Safety Glasses - Anti-Fog",
+      "category": "safety",
+      "price": "$19.99",
+      "image": "/placeholder.svg?height=300&width=300",
+      "description": "Polycarbonate safety glasses with anti-fog and anti-scratch coating.",
+      "specifications": ["ANSI Z87.1 rated", "Anti-fog coating", "Comfortable fit", "Impact resistant"]
+    },
+    {
+      "id": "safety-003",
+      "name": "Work Gloves - Nitrile",
+      "category": "safety",
+      "price": "$14.99",
+      "image": "/placeholder.svg?height=300&width=300",
+      "description": "Disposable nitrile work gloves, case of 100 pairs per box.",
+      "specifications": ["Powder-free", "Latex-free", "Food safe", "Pack of 100"]
+    },
+    {
+      "id": "safety-004",
+      "name": "Steel Toe Boots",
+      "category": "safety",
+      "price": "$129.99",
+      "image": "/placeholder.svg?height=300&width=300",
+      "description": "Oil-resistant steel toe boots with slip-resistant sole and electrical hazard protection.",
+      "specifications": ["ASTM F-75 certified", "Oil resistant", "Slip resistant", "Electrical hazard rated"]
+    },
+    {
+      "id": "safety-005",
+      "name": "High-Visibility Vest",
+      "category": "safety",
+      "price": "$22.99",
+      "image": "/placeholder.svg?height=300&width=300",
+      "description": "ANSI/ISEA certified high-visibility vest with reflective strips.",
+      "specifications": ["Class 2 rated", "Reflective material", "Adjustable fit", "Machine washable"]
+    },
+    {
+      "id": "safety-006",
+      "name": "Safety First Aid Kit",
+      "category": "safety",
+      "price": "$89.99",
+      "image": "/placeholder.svg?height=300&width=300",
+      "description": "Comprehensive workplace first aid kit with 200+ items.",
+      "specifications": ["200+ items", "OSHA compliant", "Wall-mounted", "Annual refill program"]
+    },
+    {
+      "id": "industrial-001",
+      "name": "Hydraulic Pump Assembly",
+      "category": "industrial",
+      "price": "$1,899.99",
+      "image": "/placeholder.svg?height=300&width=300",
+      "description": "Heavy-duty hydraulic pump assembly with pressure regulator and relief valve.",
+      "specifications": ["Displacement: 10cc", "Max pressure: 350 bar", "Cast iron body", "ISO 4006 certified"]
+    },
+    {
+      "id": "industrial-002",
+      "name": "Bearing Set - Ball & Roller",
+      "category": "industrial",
+      "price": "$349.99",
+      "image": "/placeholder.svg?height=300&width=300",
+      "description": "Assorted set of precision ball and roller bearings for machinery maintenance.",
+      "specifications": ["30+ bearing types", "Precision grade", "Steel cages", "ISO 281 rated"]
+    },
+    {
+      "id": "industrial-003",
+      "name": "Conveyor Belt - Industrial",
+      "category": "industrial",
+      "price": "$2,499.99",
+      "image": "/placeholder.svg?height=300&width=300",
+      "description": "Heavy-duty conveyor belt system suitable for manufacturing and packaging lines.",
+      "specifications": ["Length: 20ft", "Width: 2ft", "Load capacity: 500kg", "Oil resistant"]
+    },
+    {
+      "id": "industrial-004",
+      "name": "Electric Motor - 3HP",
+      "category": "industrial",
+      "price": "$599.99",
+      "image": "/placeholder.svg?height=300&width=300",
+      "description": "3-horsepower three-phase electric motor with thermal protection.",
+      "specifications": ["Power: 3HP", "Voltage: 230/460V", "Duty cycle: S1", "TEFC enclosure"]
+    },
+    {
+      "id": "industrial-005",
+      "name": "Industrial Valve Set",
+      "category": "industrial",
+      "price": "$899.99",
+      "image": "/placeholder.svg?height=300&width=300",
+      "description": "Complete set of industrial control valves for fluid systems.",
+      "specifications": ["5 valve types", "Rated for 300 bar", "Carbon steel", "ASME certified"]
+    },
+    {
+      "id": "industrial-006",
+      "name": "Welding Rod - Mild Steel",
+      "category": "industrial",
+      "price": "$74.99",
+      "image": "/placeholder.svg?height=300&width=300",
+      "description": "High-quality mild steel welding rods, pack of 50 rods.",
+      "specifications": ["Diameter: 3.2mm", "50 rods per pack", "AWS E6010 rated", "Low spatter"]
+    },
+    {
+      "id": "office-007",
+      "name": "Whiteboard System",
+      "category": "office",
+      "price": "$349.99",
+      "image": "/placeholder.svg?height=300&width=300",
+      "description": "Interactive whiteboard system for modern collaborative workspaces.",
+      "specifications": ["Touch responsive", "Magnetic surface", "Wall-mounted", "Accessories included"]
+    },
+    {
+      "id": "safety-007",
+      "name": "Ear Defenders",
+      "category": "safety",
+      "price": "$54.99",
+      "image": "/placeholder.svg?height=300&width=300",
+      "description": "Professional ear defenders with adjustable headband and NRR 30dB rating.",
+      "specifications": ["NRR 30dB", "Adjustable fit", "Cushioned pads", "Durable construction"]
+    },
+    {
+      "id": "industrial-007",
+      "name": "Pneumatic Cylinder",
+      "category": "industrial",
+      "price": "$279.99",
+      "image": "/placeholder.svg?height=300&width=300",
+      "description": "Double-acting pneumatic cylinder with trunnion mount and cushioned ends.",
+      "specifications": ["Bore: 50mm", "Stroke: 200mm", "Max pressure: 10 bar", "ISO 6432 compliant"]
+    }
+  ]
+}

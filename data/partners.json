@@ -1,0 +1,96 @@
+{
+  "partners": [
+    {
+      "id": "partner-001",
+      "name": "Seacon Group",
+      "logo": "/placeholder.svg?height=100&width=200",
+      "description": "Leading partner for industrial equipment and supply chain solutions in Asia. Strategic partnership for import/export coordination.",
+      "industry": "Industrial Manufacturing",
+      "region": "China & Asia",
+      "since": 2015
+    },
+    {
+      "id": "partner-002",
+      "name": "China Trading Network",
+      "logo": "/placeholder.svg?height=100&width=200",
+      "description": "Key partner connecting Nigerian businesses to Chinese manufacturers and suppliers. Specialized in bulk imports and sourcing.",
+      "industry": "Import/Export",
+      "region": "China",
+      "since": 2010
+    },
+    {
+      "id": "partner-003",
+      "name": "European Distributors Alliance",
+      "logo": "/placeholder.svg?height=100&width=200",
+      "description": "Established network of European suppliers and distributors for quality goods. Direct access to EU manufacturing.",
+      "industry": "General Manufacturing",
+      "region": "Europe",
+      "since": 2012
+    },
+    {
+      "id": "partner-004",
+      "name": "West Africa Trading Consortium",
+      "logo": "/placeholder.svg?height=100&width=200",
+      "description": "Regional partnership for clearing, forwarding, and distribution across West African markets.",
+      "industry": "Clearing & Forwarding",
+      "region": "West Africa",
+      "since": 2011
+    },
+    {
+      "id": "partner-005",
+      "name": "Global Logistics Partners",
+      "logo": "/placeholder.svg?height=100&width=200",
+      "description": "International shipping and logistics network for reliable cargo movement and tracking worldwide.",
+      "industry": "Logistics",
+      "region": "Global",
+      "since": 2008
+    },
+    {
+      "id": "partner-006",
+      "name": "Customs Clearance Specialists",
+      "logo": "/placeholder.svg?height=100&width=200",
+      "description": "Expert partners for complex customs documentation and regulatory compliance across major ports.",
+      "industry": "Customs & Compliance",
+      "region": "Nigeria & West Africa",
+      "since": 2007
+    }
+  ],
+  "clients": [
+    {
+      "id": "client-001",
+      "name": "Manufacturing Companies",
+      "industry": "Manufacturing",
+      "region": "Nigeria & West Africa"
+    },
+    {
+      "id": "client-002",
+      "name": "Retail & Distribution",
+      "industry": "Retail",
+      "region": "Nigeria"
+    },
+    {
+      "id": "client-003",
+      "name": "Construction & Engineering",
+      "industry": "Construction",
+      "region": "West Africa"
+    },
+    {
+      "id": "client-004",
+      "name": "Government & Public Enterprises",
+      "industry": "Government",
+      "region": "Nigeria"
+    },
+    {
+      "id": "client-005",
+      "name": "Technology & Electronics",
+      "industry": "Technology",
+      "region": "Global"
+    },
+    {
+      "id": "client-006",
+      "name": "Hospitality & Services",
+      "industry": "Services",
+      "region": "West Africa"
+    }
+  ]
+}
