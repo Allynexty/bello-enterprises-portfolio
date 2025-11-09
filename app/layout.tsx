@@ -45,8 +45,8 @@ export default function RootLayout({
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between">
               <Link href="/" className="flex items-center gap-2">
-                <div class="flex h-8 w-8 items-center justify-center">
-                  <img src="/logo.png" alt="T. Bello Enterprises logo" class="h-8 w-8 object-contain rounded-lg" />
+                <div class="flex items-center justify-center">
+                  <img src="/logo.png" alt="T. Bello Enterprises logo" class="max-h-12 object-contain" />
                 </div>
                 <span className="font-display font-bold hidden sm:inline">T. Bello</span>
               </Link>
