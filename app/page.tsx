@@ -16,8 +16,7 @@ export default function HomePage() {
               Your Gateway to Global Markets
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 text-balance">
-              T. Bello Enterprises connects businesses to international markets through expert import/export services,
-              clearing & forwarding, and strategic partnerships. Established 2007, trusted by enterprises worldwide.
+              Established in 2007, T. Bello Enterprises connects businesses to global markets with end-to-end procurement and trade services. We handle sourcing and supplier checks, negotiate contracts, and take care of import/export paperwork, customs and freight—so our clients see clearer costs, faster delivery and fewer supply interruptions. Trusted by companies around the world
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
