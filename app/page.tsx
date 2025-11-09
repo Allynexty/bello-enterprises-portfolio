@@ -107,8 +107,8 @@ export default function HomePage() {
                       <path d="M4 3h16v3H4zm1 4h14v12H5zm4-2v14M10 5v14M15 5v14" />
                       <path d="M3 7h18" />
                     </svg>
-                    <h3 className="text-xl font-semibold text-foreground">Supply Services</h3>
-                    <p className="text-sm text-muted-foreground mt-2">PPE, OEM, machinery & equipment</p>
+                    <h3 className="text-xl font-semibold text-foreground">Procurement & Supply</h3>
+                    <p className="text-sm text-muted-foreground mt-2">PPE, OEM, machinery & office equipment</p>
                   </div>
                 </div>
               </div>
