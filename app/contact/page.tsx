@@ -78,12 +78,12 @@ export default function ContactPage() {
 
               <div>
                 <h3 className="font-semibold mb-2">Phone</h3>
-                <a href="tel:+2348188133006" className="text-primary hover:underline">
-                  +234 8188133006
+                <a href="tel:+2348033541514" className="text-primary hover:underline">
+                  +234 8033541514
                 </a>
                 <br />
-                <a href="tel:+2348033641514" className="text-primary hover:underline">
-                  +234 8033641514
+                <a href="tel:+2348188133006" className="text-primary hover:underline">
+                  +234 8188133006
                 </a>
                 <p className="text-sm text-muted-foreground mt-1">Mon-Fri, 9AM-5PM WAT</p>
               </div>
