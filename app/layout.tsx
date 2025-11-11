@@ -166,7 +166,7 @@ export default function RootLayout({
                 </p>
                 <p className="text-sm text-muted-foreground mb-2">
                   Phone:{" "}
-                  <a href="tel:+2348188133006" className="hover:text-foreground transition-colors">
+                  <a href="tel:+2348033541514" className="hover:text-foreground transition-colors">
                     +234 8033541514
                   </a>
                 </p>
