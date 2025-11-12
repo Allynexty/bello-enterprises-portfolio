@@ -35,7 +35,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="relative h-96 rounded-lg overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 border border-border">
-            <img src="/modern-office-building.png" alt="T. Bello Enterprises" className="w-full h-full object-cover" />
+            <img src="/dummy.png" alt="T. Bello Enterprises" className="w-full h-full object-cover" />
           </div>
         </div>
 
