@@ -6,7 +6,7 @@
       "logo": "/cmes.png?height=100&width=200",
       "description": "Supply and procurement services for general supplies and spare parts, Scaffolding and mounting of heavy construction equipment.",
       "industry": "Procurement, Clearing & Forwarding",
-      "region": "Nigeria",
+      "region": "Nigeria"
     },
     {
       "id": "partner-002",
@@ -14,7 +14,7 @@
       "logo": "/south_enrgyx.png?height=100&width=200",
       "description": "Eko Atlantic Project; Generator, PPE and Power tools procurement and Servicing.",
       "industry": "Engineering Services",
-      "region": "Nigeria",
+      "region": "Nigeria"
     },
     {
       "id": "partner-003",
@@ -22,7 +22,7 @@
       "logo": "/ITB.png?height=100&width=200",
       "description": "Procurement of Industrial spare parts, electical and Mechanical tools and office equipments and furniture",
       "industry": "Procurement & Supply",
-      "region": "Nigeria",
+      "region": "Nigeria"
     },
     {
       "id": "partner-004",
@@ -30,7 +30,7 @@
       "logo": "/ucc.jpg?height=100&width=200",
       "description": "Logistics for cross border procurements",
       "industry": "Clearing & Forwarding, Delivery and Logistics",
-      "region": "West Africa and China",
+      "region": "West Africa and China"
     },
   ],
   "clients": [
