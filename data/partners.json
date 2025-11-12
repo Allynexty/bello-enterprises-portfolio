@@ -2,58 +2,36 @@
   "partners": [
     {
       "id": "partner-001",
-      "name": "Seacon Group",
-      "logo": "/placeholder.svg?height=100&width=200",
-      "description": "Leading partner for industrial equipment and supply chain solutions in Asia. Strategic partnership for import/export coordination.",
-      "industry": "Industrial Manufacturing",
-      "region": "China & Asia",
-      "since": 2015
+      "name": "Compact Manifold and Energy Services",
+      "logo": "/cmes.png?height=100&width=200",
+      "description": "Supply and procurement services for general supplies and spare parts, Scaffolding and mounting of heavy construction equipment.",
+      "industry": "Procurement, Clearing & Forwarding",
+      "region": "Nigeria",
     },
     {
       "id": "partner-002",
-      "name": "China Trading Network",
-      "logo": "/placeholder.svg?height=100&width=200",
-      "description": "Key partner connecting Nigerian businesses to Chinese manufacturers and suppliers. Specialized in bulk imports and sourcing.",
-      "industry": "Import/Export",
-      "region": "China",
-      "since": 2010
+      "name": "South Energyx Limited",
+      "logo": "/south_enrgyx.png?height=100&width=200",
+      "description": "Eko Atlantic Project; Generator, PPE and Power tools procurement and Servicing.",
+      "industry": "Engineering Services",
+      "region": "Nigeria",
     },
     {
       "id": "partner-003",
-      "name": "European Distributors Alliance",
-      "logo": "/placeholder.svg?height=100&width=200",
-      "description": "Established network of European suppliers and distributors for quality goods. Direct access to EU manufacturing.",
-      "industry": "General Manufacturing",
-      "region": "Europe",
-      "since": 2012
+      "name": "ITB Builders and Constructors Limited",
+      "logo": "/ITB.png?height=100&width=200",
+      "description": "Procurement of Industrial spare parts, electical and Mechanical tools and office equipments and furniture",
+      "industry": "Procurement & Supply",
+      "region": "Nigeria",
     },
     {
       "id": "partner-004",
-      "name": "West Africa Trading Consortium",
-      "logo": "/placeholder.svg?height=100&width=200",
-      "description": "Regional partnership for clearing, forwarding, and distribution across West African markets.",
-      "industry": "Clearing & Forwarding",
-      "region": "West Africa",
-      "since": 2011
+      "name": "UCC Cargo Guangzhou",
+      "logo": "/ucc.jpg?height=100&width=200",
+      "description": "Logistics for cross border procurements",
+      "industry": "Clearing & Forwarding, Delivery and Logistics",
+      "region": "West Africa and China",
     },
-    {
-      "id": "partner-005",
-      "name": "Global Logistics Partners",
-      "logo": "/placeholder.svg?height=100&width=200",
-      "description": "International shipping and logistics network for reliable cargo movement and tracking worldwide.",
-      "industry": "Logistics",
-      "region": "Global",
-      "since": 2008
-    },
-    {
-      "id": "partner-006",
-      "name": "Customs Clearance Specialists",
-      "logo": "/placeholder.svg?height=100&width=200",
-      "description": "Expert partners for complex customs documentation and regulatory compliance across major ports.",
-      "industry": "Customs & Compliance",
-      "region": "Nigeria & West Africa",
-      "since": 2007
-    }
   ],
   "clients": [
     {
