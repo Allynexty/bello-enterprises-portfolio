@@ -83,19 +83,15 @@ export default function AboutPage() {
         <div className="bg-primary text-primary-foreground rounded-lg p-12 mb-16">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold mb-2">50+</div>
+              <div className="text-4xl font-bold mb-2">20</div>
               <p className="opacity-90">Years Experience</p>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">150+</div>
+              <div className="text-4xl font-bold mb-2">3</div>
               <p className="opacity-90">Countries Served</p>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">10K+</div>
-              <p className="opacity-90">Products Available</p>
-            </div>
-            <div>
-              <div className="text-4xl font-bold mb-2">5000+</div>
+              <div className="text-4xl font-bold mb-2">20+</div>
               <p className="opacity-90">Active Clients</p>
             </div>
           </div>
