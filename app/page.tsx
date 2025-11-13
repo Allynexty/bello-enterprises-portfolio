@@ -3,6 +3,8 @@
 import React, { useRef } from "react";
 import Link from "next/link";
 import { SectionContainer } from "@/components/section-container";
+import partners from "@/data/partners.json"
+
 
 /**
  * app/page.tsx
@@ -403,43 +405,43 @@ export default function HomePage() {
         </div>
       </SectionContainer>
 
-      {/* MINI CLIENTS STRIP - place this after the SERVICES GRID SectionContainer and before the "Small features" SectionContainer */}
+      {/* MINI PARTNERS STRIP */}
       <SectionContainer>
         <div className="py-8">
-          <h3 className="text-2xl font-semibold mb-4 text-center">Selected Clients</h3>
+          <h3 className="text-2xl font-semibold mb-4 text-center">Selected Partners</h3>
       
           <div className="flex flex-wrap items-center justify-center gap-6">
-            {partners.clients?.slice(0, 6).map((client) => (
+            {partners.slice(0, 6).map((p) => (
               <div
-                key={client.id}
+                key={p.id}
                 className="w-36 flex-shrink-0 flex flex-col items-center bg-background rounded-lg p-3 border border-border shadow-sm"
               >
-                {client.logo ? (
+                {p.logo ? (
                   <img
-                    src={client.logo}
-                    alt={client.name}
+                    src={p.logo}
+                    alt={p.name}
                     className="h-10 object-contain mb-2"
                     loading="lazy"
                   />
                 ) : (
                   <div className="h-10 w-full flex items-center justify-center bg-secondary/10 rounded mb-2 text-xs">
-                    {client.name}
+                    {p.name}
                   </div>
                 )}
-                <div className="text-sm font-medium text-center">{client.name}</div>
-                <div className="text-xs text-muted-foreground mt-1">{client.region}</div>
+      
+                <div className="text-sm font-medium text-center">{p.name}</div>
+                <div className="text-xs text-muted-foreground mt-1">{p.region}</div>
               </div>
             ))}
       
-            {/* Fallback if there are no clients in the JSON */}
-            {!partners.clients || partners.clients.length === 0 ? (
-              <div className="text-sm text-muted-foreground">No clients added yet.</div>
-            ) : null}
+            {partners.length === 0 && (
+              <div className="text-sm text-muted-foreground">No partners added yet.</div>
+            )}
           </div>
       
           <div className="mt-6 text-center">
-            <Link href="/clients" className="text-sm font-semibold text-primary">
-              View all clients & partners →
+            <Link href="/partners" className="text-sm font-semibold text-primary">
+              View all partners →
             </Link>
           </div>
         </div>
