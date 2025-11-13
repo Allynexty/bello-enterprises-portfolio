@@ -241,9 +241,9 @@ export default function HomePage() {
               loading="lazy"
             />
             <div className="p-6 bg-background">
-              <h3 className="text-xl font-semibold mb-2">Procurement and Supply</h3>
+              <h3 className="text-xl font-semibold mb-2">Procurement & Supply</h3>
               <p className="text-sm text-muted-foreground mb-4">Direct sourcing and supply of specialized products</p>
-              <Link href="/services#clearing" className="text-sm font-semibold text-primary">Learn more →</Link>
+              <Link href="/services#supply" className="text-sm font-semibold text-primary">Learn more →</Link>
             </div>
           </article>
 
