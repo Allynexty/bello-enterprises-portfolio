@@ -16,6 +16,8 @@ export default function HomePage() {
   const importRef = useRef<HTMLElement | null>(null);
   const deliveryRef = useRef<HTMLElement | null>(null);
   const clearingRef = useRef<HTMLElement | null>(null);
+  const supplyRef = useRef<HTMLElement | null>(null);
+
 
   function scrollTo(ref: React.RefObject<HTMLElement | null>) {
     if (ref.current) {
