@@ -76,7 +76,7 @@ export default function RootLayout({
                   href="/partners"
                   className="text-sm font-medium text-foreground hover:text-primary transition-colors"
                 >
-                  Partners
+                  Clients
                 </Link>
                 <Link
                   href="/contact"
