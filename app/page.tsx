@@ -3,7 +3,6 @@
 import React, { useRef } from "react";
 import Link from "next/link";
 import { SectionContainer } from "@/components/section-container";
-import partners from "@/data/partners.json";
 
 /**
  * app/page.tsx
@@ -48,7 +47,7 @@ export default function HomePage() {
               Since 2007 we connect African and Asian markets — procurement and supply, clearing and forwarding, and logistics handled end-to-end.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4justify-center mb-8">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link
                 href="/services"
                 className="px-8 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors text-center"
@@ -73,7 +72,7 @@ export default function HomePage() {
               >
                 {/* Glow effect behind globe */}
                 <div className="absolute inset-0 rounded-full bg-primary/20 blur-3xl opacity-60 animate-pulse" />
-
+                
                 {/* Enhanced SVG globe */}
                 <svg
                   viewBox="0 0 600 600"
@@ -87,7 +86,7 @@ export default function HomePage() {
                       <stop offset="50%" stopColor="rgba(59, 130, 246, 0.08)" />
                       <stop offset="100%" stopColor="rgba(37, 99, 235, 0.02)" />
                     </radialGradient>
-
+                    
                     {/* Glow filter for arcs */}
                     <filter id="glow">
                       <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
@@ -95,7 +94,7 @@ export default function HomePage() {
                         <feMergeNode in="coloredBlur"/>
                         <feMergeNode in="SourceGraphic"/>
                       </feMerge>
-                    </feMerge>
+                    </filter>
                   </defs>
 
                   {/* Rotating globe group */}
@@ -160,7 +159,7 @@ export default function HomePage() {
                       stroke="rgba(34, 197, 94, 0.4)"
                       strokeWidth="1.5"
                     />
-
+                    
                     {/* Asia outline */}
                     <path
                       d="M340,260 Q350,245 365,250 Q380,255 385,270 Q390,285 380,295 Q365,300 350,285 Q340,275 340,260"
@@ -404,31 +403,45 @@ export default function HomePage() {
         </div>
       </SectionContainer>
 
-      {/* MINI CLIENTS PREVIEW (new) */}
+      {/* MINI CLIENTS STRIP - place this after the SERVICES GRID SectionContainer and before the "Small features" SectionContainer */}
       <SectionContainer>
-        <h2 className="text-2xl md:text-3xl font-bold mb-2 text-center">Selected Clients</h2>
-        <p className="text-sm text-muted-foreground text-center mb-6">A snapshot of organizations we work with — trusted across industries.</p>
-
-        <div className="grid grid-cols-3 md:grid-cols-6 gap-4 items-center justify-center mb-4">
-          {Array.isArray(partners.clients) && partners.clients.slice(0, 6).map((client) => (
-            <div
-              key={client.id}
-              className="flex items-center justify-center p-3 bg-background rounded-lg border border-border h-20 overflow-hidden"
-              aria-label={`Client: ${client.name}`}
-            >
-              {client.logo ? (
-                // if a logo is provided, show it
-                <img src={client.logo} alt={client.name} className="max-h-12 object-contain" loading="lazy" />
-              ) : (
-                // fallback to name short label
-                <span className="text-sm font-semibold text-muted-foreground text-center px-2">{client.name}</span>
-              )}
-            </div>
-          ))}
-        </div>
-
-        <div className="text-center">
-          <Link href="/partners" className="text-sm font-semibold text-primary">View all partners & clients →</Link>
+        <div className="py-8">
+          <h3 className="text-2xl font-semibold mb-4 text-center">Selected Clients</h3>
+      
+          <div className="flex flex-wrap items-center justify-center gap-6">
+            {partners.clients?.slice(0, 6).map((client) => (
+              <div
+                key={client.id}
+                className="w-36 flex-shrink-0 flex flex-col items-center bg-background rounded-lg p-3 border border-border shadow-sm"
+              >
+                {client.logo ? (
+                  <img
+                    src={client.logo}
+                    alt={client.name}
+                    className="h-10 object-contain mb-2"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div className="h-10 w-full flex items-center justify-center bg-secondary/10 rounded mb-2 text-xs">
+                    {client.name}
+                  </div>
+                )}
+                <div className="text-sm font-medium text-center">{client.name}</div>
+                <div className="text-xs text-muted-foreground mt-1">{client.region}</div>
+              </div>
+            ))}
+      
+            {/* Fallback if there are no clients in the JSON */}
+            {!partners.clients || partners.clients.length === 0 ? (
+              <div className="text-sm text-muted-foreground">No clients added yet.</div>
+            ) : null}
+          </div>
+      
+          <div className="mt-6 text-center">
+            <Link href="/clients" className="text-sm font-semibold text-primary">
+              View all clients & partners →
+            </Link>
+          </div>
         </div>
       </SectionContainer>
 
