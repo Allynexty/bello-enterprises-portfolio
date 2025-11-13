@@ -29,16 +29,6 @@ export default function HomePage() {
       <section className="relative overflow-hidden pt-20 pb-24 md:pt-28 md:pb-28">
         {/* Background split images: left = Nigeria (market), right = China (port/city) */}
         <div className="absolute inset-0 -z-10 flex">
-          {/* Left (Nigeria) */}
-          <div className="w-1/2 h-full overflow-hidden">
-            <img
-              src="/lekki_port.jpg"
-              alt="Lekki port"
-              className="w-full h-full object-cover filter saturate-95 brightness-90"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/30 to-transparent pointer-events-none" />
-          </div>
-
           {/* Right (China) */}
           <div className="w-1/2 h-full overflow-hidden">
             <img
@@ -228,7 +218,7 @@ export default function HomePage() {
           {/* Delivery & Logistics */}
           <article ref={deliveryRef} className="group relative rounded-lg overflow-hidden border border-border hover:shadow-lg transition-all duration-300">
             <img
-              src="/trucks_frieght.png"
+              src="/trucks_freight.png"
               alt="Freight truck on highway and port logistics"
               className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
               loading="lazy"
@@ -237,6 +227,21 @@ export default function HomePage() {
               <h3 className="text-xl font-semibold mb-2">Delivery & Logistics</h3>
               <p className="text-sm text-muted-foreground mb-4">Reliable transportation, multimodal freight and ship scheduling.</p>
               <Link href="/services#delivery" className="text-sm font-semibold text-primary">Learn more →</Link>
+            </div>
+          </article>
+
+          {/* Procurement & Supply */}
+          <article ref={supplyRef} className="group relative rounded-lg overflow-hidden border border-border hover:shadow-lg transition-all duration-300">
+            <img
+              src="/office__new.jpg"
+              alt="Office Supplies and equipment"
+              className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+            <div className="p-6 bg-background">
+              <h3 className="text-xl font-semibold mb-2">Procurement and Supply</h3>
+              <p className="text-sm text-muted-foreground mb-4">Direct sourcing and supply of specialized products</p>
+              <Link href="/services#clearing" className="text-sm font-semibold text-primary">Learn more →</Link>
             </div>
           </article>
 
@@ -262,14 +267,14 @@ export default function HomePage() {
         <div className="grid md:grid-cols-3 gap-8 my-12">
           <div className="text-center">
             <div className="w-20 h-20 rounded-lg overflow-hidden mx-auto mb-4">
-              <img src="/office_2" alt="Office desk (Nigeria)" className="w-full h-full object-cover" loading="lazy" />
+              <img src="/office_2.jpg" alt="Office desk (Nigeria)" className="w-full h-full object-cover" loading="lazy" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Local Office Support</h3>
             <p className="text-muted-foreground text-sm">On-the-ground teams in Lagos and West Africa for inspections and procurement.</p>
           </div>
           <div className="text-center">
             <div className="w-20 h-20 rounded-lg overflow-hidden mx-auto mb-4">
-              <img src="/office__new.jpg" alt="Office equipment" className="w-full h-full object-cover" loading="lazy" />
+              <img src="/stationery__1.jpg" alt="Office equipment" className="w-full h-full object-cover" loading="lazy" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Documentation & Compliance</h3>
             <p className="text-muted-foreground text-sm">Accurate paperwork, certificates and shipping documentation.</p>
