@@ -153,7 +153,7 @@ export default function HomePage() {
             </div>
             <h3 className="text-xl font-semibold mb-2">Global Network</h3>
             <p className="text-muted-foreground">
-              Connected to suppliers and buyers across Asia, Europe, Americas, and Africa.
+              Connected to suppliers and buyers across Asia and Africa.
             </p>
           </div>
           <div className="text-center">
