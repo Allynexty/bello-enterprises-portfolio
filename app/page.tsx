@@ -56,10 +56,10 @@ export default function HomePage() {
         <SectionContainer className="relative z-10 py-12 md:py-20">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-4 drop-shadow-md">
-              Bridging Nigeria & China — Sourcing, Shipping, Compliance
+              Bridging Markets and Buyers — Sourcing & Procurement, Shipping, Compliance
             </h1>
             <p className="text-md md:text-lg text-white/90 mb-8">
-              Since 2007 we connect Lagos markets to Chinese suppliers — procurement, clearing, and logistics handled end-to-end.
+              Since 2007 we connect Lagos and Asian markets — procurement and supply, clearing and forwarding, and logistics handled end-to-end.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -193,8 +193,8 @@ export default function HomePage() {
                   </g>
 
                   {/* Labels (small) */}
-                  <text x="155" y="295" fontSize="12" fill="rgba(255,255,255,0.9)">Nigeria — Markets</text>
-                  <text x="405" y="320" fontSize="12" fill="rgba(255,255,255,0.9)">China — Suppliers</text>
+                  <text x="155" y="295" fontSize="12" fill="rgba(255,255,255,0.9)">Nigeria </text>
+                  <text x="405" y="320" fontSize="12" fill="rgba(255,255,255,0.9)">China </text>
                 </svg>
               </div>
             </div>
@@ -220,7 +220,7 @@ export default function HomePage() {
             />
             <div className="p-6 bg-background">
               <h3 className="text-xl font-semibold mb-2">Import & Export</h3>
-              <p className="text-sm text-muted-foreground mb-4">Sourcing, supplier checks and cross-border trade between China and Nigeria.</p>
+              <p className="text-sm text-muted-foreground mb-4">Sourcing, supplier checks and cross-border trade between Different markets.</p>
               <Link href="/services#import" className="text-sm font-semibold text-primary">Learn more →</Link>
             </div>
           </article>
@@ -287,8 +287,8 @@ export default function HomePage() {
       {/* CTA */}
       <SectionContainer>
         <div className="bg-primary text-primary-foreground rounded-lg p-10 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to move goods between Nigeria & China?</h2>
-          <p className="mb-6 opacity-90">Talk to our team about pricing, lead times and customs support.</p>
+          <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Procure, Supply or Distribute goods or services?</h2>
+          <p className="mb-6 opacity-90">Talk to our team about your needs.</p>
           <Link href="/contact" className="inline-block px-6 py-3 rounded-lg bg-primary-foreground text-primary font-semibold hover:bg-primary-foreground/90 transition-colors">
             Contact Us
           </Link>
