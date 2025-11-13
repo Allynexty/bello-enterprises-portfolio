@@ -32,8 +32,8 @@ export default function HomePage() {
           {/* Left (Nigeria) */}
           <div className="w-1/2 h-full overflow-hidden">
             <img
-              src="https://source.unsplash.com/1600x900/?lagos,market,nigeria"
-              alt="Open-air market in Lagos, Nigeria"
+              src="/lekki_port.jpg"
+              alt="Lekki port"
               className="w-full h-full object-cover filter saturate-95 brightness-90"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/30 to-transparent pointer-events-none" />
@@ -42,8 +42,8 @@ export default function HomePage() {
           {/* Right (China) */}
           <div className="w-1/2 h-full overflow-hidden">
             <img
-              src="https://source.unsplash.com/1600x900/?shanghai,port,china"
-              alt="Port or skyline in China"
+              src="/guangzhou_port.jpg"
+              alt="Guangzhou port"
               className="w-full h-full object-cover filter saturate-95 brightness-90"
             />
             <div className="absolute inset-0 bg-gradient-to-l from-black/30 to-transparent pointer-events-none" />
@@ -59,7 +59,7 @@ export default function HomePage() {
               Bridging Markets and Buyers — Sourcing & Procurement, Shipping, Compliance
             </h1>
             <p className="text-md md:text-lg text-white/90 mb-8">
-              Since 2007 we connect Lagos and Asian markets — procurement and supply, clearing and forwarding, and logistics handled end-to-end.
+              Since 2007 we connect African and Asian markets — procurement and supply, clearing and forwarding, and logistics handled end-to-end.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -200,7 +200,7 @@ export default function HomePage() {
             </div>
 
             <p className="text-sm text-white/70 mt-6">
-              Click a node to jump to the matching service. This hero uses test images — replace with local files for production.
+              Click a node to jump to the matching service.
             </p>
           </div>
         </SectionContainer>
@@ -213,7 +213,7 @@ export default function HomePage() {
           {/* Import & Export */}
           <article ref={importRef} className="group relative rounded-lg overflow-hidden border border-border hover:shadow-lg transition-all duration-300">
             <img
-              src="https://source.unsplash.com/1200x800/?lagos,shipping,market"
+              src="/port_pic.jpg"
               alt="Containers at a port serving import and export"
               className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
               loading="lazy"
@@ -228,7 +228,7 @@ export default function HomePage() {
           {/* Delivery & Logistics */}
           <article ref={deliveryRef} className="group relative rounded-lg overflow-hidden border border-border hover:shadow-lg transition-all duration-300">
             <img
-              src="https://source.unsplash.com/1200x800/?freight,truck,port"
+              src="/trucks_frieght.png"
               alt="Freight truck on highway and port logistics"
               className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
               loading="lazy"
@@ -243,7 +243,7 @@ export default function HomePage() {
           {/* Clearing & Forwarding */}
           <article ref={clearingRef} className="group relative rounded-lg overflow-hidden border border-border hover:shadow-lg transition-all duration-300">
             <img
-              src="https://source.unsplash.com/1200x800/?customs,inspection,documents"
+              src="/customs.jpg"
               alt="Customs paperwork and inspections"
               className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
               loading="lazy"
@@ -262,21 +262,21 @@ export default function HomePage() {
         <div className="grid md:grid-cols-3 gap-8 my-12">
           <div className="text-center">
             <div className="w-20 h-20 rounded-lg overflow-hidden mx-auto mb-4">
-              <img src="https://source.unsplash.com/800x600/?office,desk,nigeria" alt="Office desk (Nigeria)" className="w-full h-full object-cover" loading="lazy" />
+              <img src="/office_2" alt="Office desk (Nigeria)" className="w-full h-full object-cover" loading="lazy" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Local Office Support</h3>
             <p className="text-muted-foreground text-sm">On-the-ground teams in Lagos and West Africa for inspections and procurement.</p>
           </div>
           <div className="text-center">
             <div className="w-20 h-20 rounded-lg overflow-hidden mx-auto mb-4">
-              <img src="https://source.unsplash.com/800x600/?office,printer,china" alt="Office equipment" className="w-full h-full object-cover" loading="lazy" />
+              <img src="/office__new.jpg" alt="Office equipment" className="w-full h-full object-cover" loading="lazy" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Documentation & Compliance</h3>
             <p className="text-muted-foreground text-sm">Accurate paperwork, certificates and shipping documentation.</p>
           </div>
           <div className="text-center">
             <div className="w-20 h-20 rounded-lg overflow-hidden mx-auto mb-4">
-              <img src="https://source.unsplash.com/800x600/?stationery,flatlay" alt="Stationery and office supplies" className="w-full h-full object-cover" loading="lazy" />
+              <img src="PPE3.jpg" alt="Stationery and office supplies" className="w-full h-full object-cover" loading="lazy" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Office Supplies & PPE</h3>
             <p className="text-muted-foreground text-sm">PPE, office equipment and spare parts procurement.</p>
