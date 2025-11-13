@@ -66,12 +66,12 @@ export default function RootLayout({
                 >
                   Services
                 </Link>
-                <Link
+                {/* <Link
                   href="/projects"
                   className="text-sm font-medium text-foreground hover:text-primary transition-colors"
                 >
                   Projects
-                </Link>
+                </Link> */}
                 <Link
                   href="/partners"
                   className="text-sm font-medium text-foreground hover:text-primary transition-colors"
