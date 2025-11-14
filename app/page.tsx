@@ -411,32 +411,45 @@ export default function HomePage() {
           <h3 className="text-2xl font-semibold mb-4 text-center">Selected Partners</h3>
       
           <div className="flex flex-wrap items-center justify-center gap-6">
-            {partners.slice(0, 6).map((p) => (
-              <div
-                key={p.id}
-                className="w-36 flex-shrink-0 flex flex-col items-center bg-background rounded-lg p-3 border border-border shadow-sm"
-              >
-                {p.logo ? (
-                  <img
-                    src={p.logo}
-                    alt={p.name}
-                    className="h-10 object-contain mb-2"
-                    loading="lazy"
-                  />
-                ) : (
-                  <div className="h-10 w-full flex items-center justify-center bg-secondary/10 rounded mb-2 text-xs">
-                    {p.name}
-                  </div>
-                )}
+            {(() => {
+              // partners is imported as an alias 'partners'
+              // ensure we have an array to slice/map (supports both array or { partners: [...] } shapes)
+              const list = Array.isArray(partners)
+                ? partners
+                : Array.isArray(partners?.partners)
+                ? partners.partners
+                : [];
       
-                <div className="text-sm font-medium text-center">{p.name}</div>
-                <div className="text-xs text-muted-foreground mt-1">{p.region}</div>
-              </div>
-            ))}
+              const visible = list.slice(0, 6);
       
-            {partners.length === 0 && (
-              <div className="text-sm text-muted-foreground">No partners added yet.</div>
-            )}
+              if (visible.length === 0) {
+                return (
+                  <div className="text-sm text-muted-foreground">No partners added yet.</div>
+                );
+              }
+      
+              return visible.map((p) => (
+                <div
+                  key={p.id}
+                  className="w-36 flex-shrink-0 flex flex-col items-center bg-background rounded-lg p-3 border border-border shadow-sm"
+                >
+                  {p.logo ? (
+                    <img
+                      src={p.logo}
+                      alt={p.name ?? "Partner logo"}
+                      className="h-10 object-contain mb-2"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div className="h-10 w-full flex items-center justify-center bg-secondary/10 rounded mb-2 text-xs">
+                      {p.name}
+                    </div>
+                  )}
+      
+                  <div className="text-sm font-medium text-center truncate">{p.name}</div>
+                </div>
+              ));
+            })()}
           </div>
       
           <div className="mt-6 text-center">
