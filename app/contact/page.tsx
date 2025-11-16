@@ -70,8 +70,8 @@ export default function ContactPage() {
             <div className="space-y-6">
               <div>
                 <h3 className="font-semibold mb-2">Email</h3>
-                <a href="mailto:bellogbemisola181@yahoo.com" className="text-primary hover:underline">
-                  bellogbemisola181@yahoo.com
+                <a href="mailto:info@bellotrade.com" className="text-primary hover:underline">
+                  info@bellotrade.com
                 </a>
                 <p className="text-sm text-muted-foreground mt-1">Response within 24 hours</p>
               </div>
