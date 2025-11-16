@@ -160,8 +160,8 @@ export default function RootLayout({
                 <h3 className="font-semibold mb-4">Contact</h3>
                 <p className="text-sm text-muted-foreground mb-2">
                   Email:{" "}
-                  <a href="mailto:belloprocurement@gmail.com" className="hover:text-foreground transition-colors">
-                    belloprocurement@gmail.com
+                  <a href="mailto:info@bellotrade.com" className="hover:text-foreground transition-colors">
+                    info@bellotrade.com
                   </a>
                 </p>
                 <p className="text-sm text-muted-foreground mb-2">
