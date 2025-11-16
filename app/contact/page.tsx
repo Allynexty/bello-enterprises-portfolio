@@ -236,7 +236,7 @@ export default function ContactPage() {
                     />
                   </div>
 
-                  <div className="bg-blue-50 dark:bg-blue-950 p-4 rounded-lg border border-blue-200 dark:border-blue-800">
+                  {/* <div className="bg-blue-50 dark:bg-blue-950 p-4 rounded-lg border border-blue-200 dark:border-blue-800">
                     <label className="flex items-start gap-3 cursor-pointer">
                       <input
                         type="checkbox"
@@ -250,7 +250,7 @@ export default function ContactPage() {
                         pricing and support.
                       </span>
                     </label>
-                  </div>
+                  </div> */}
 
                   <button
                     type="submit"
