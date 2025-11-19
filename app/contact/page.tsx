@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import Link from "next/link"
 import { SectionContainer } from "@/components/section-container"
@@ -19,6 +18,10 @@ export default function ContactPage() {
   })
 
   const [submitted, setSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false) // Added loading state
+
+  // REPLACE THIS WITH YOUR ACTUAL EMAIL ADDRESS
+  const DESTINATION_EMAIL = "ayoolamilekanking@gmail.com" 
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value, type } = e.target
@@ -28,24 +31,52 @@ export default function ContactPage() {
     }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Simulate form submission
-    console.log("Form submitted:", formData)
-    setSubmitted(true)
-    setTimeout(() => {
-      setSubmitted(false)
-      setFormData({
-        name: "",
-        email: "",
-        company: "",
-        subject: "",
-        inquiryType: "general",
-        productId: "",
-        message: "",
-        oemAuthorization: false,
+    setIsSubmitting(true)
+
+    try {
+      // We use the FormSubmit AJAX endpoint
+      const response = await fetch(`https://formsubmit.co/ajax/${DESTINATION_EMAIL}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+          _subject: `New Contact Inquiry: ${formData.subject}`, // Custom email subject
+          _template: "table", // Formats email nicely
+        }),
       })
-    }, 3000)
+
+      if (response.ok) {
+        setSubmitted(true)
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          subject: "",
+          inquiryType: "general",
+          productId: "",
+          message: "",
+          oemAuthorization: false,
+        })
+        
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+          setSubmitted(false)
+        }, 5000)
+      } else {
+        alert("Something went wrong. Please try again later.")
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error)
+      alert("There was an error sending your message.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -62,7 +93,7 @@ export default function ContactPage() {
 
       {/* Contact Form & Info */}
       <SectionContainer>
-        <div className="grid md:grid-cols-3 gap-12">
+        <div className="grid md:grid-cols-3 gap-12 py-12">
           {/* Contact Information */}
           <div className="md:col-span-1">
             <h2 className="text-2xl font-bold mb-8">Contact Information</h2>
@@ -236,27 +267,12 @@ export default function ContactPage() {
                     />
                   </div>
 
-                  {/* <div className="bg-blue-50 dark:bg-blue-950 p-4 rounded-lg border border-blue-200 dark:border-blue-800">
-                    <label className="flex items-start gap-3 cursor-pointer">
-                      <input
-                        type="checkbox"
-                        name="oemAuthorization"
-                        checked={formData.oemAuthorization}
-                        onChange={handleChange}
-                        className="mt-1 w-4 h-4 rounded border-border"
-                      />
-                      <span className="text-sm">
-                        I am authorized to represent an OEM (Original Equipment Manufacturer) and require specialized
-                        pricing and support.
-                      </span>
-                    </label>
-                  </div> */}
-
                   <button
                     type="submit"
-                    className="w-full px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors"
+                    disabled={isSubmitting}
+                    className="w-full px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    Send Message
+                    {isSubmitting ? "Sending..." : "Send Message"}
                   </button>
 
                   <p className="text-xs text-muted-foreground text-center">
