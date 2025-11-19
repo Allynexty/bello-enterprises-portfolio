@@ -412,8 +412,6 @@ export default function HomePage() {
       
           <div className="flex flex-wrap items-center justify-center gap-6">
             {(() => {
-              // partners is imported as an alias 'partners'
-              // ensure we have an array to slice/map (supports both array or { partners: [...] } shapes)
               const list = Array.isArray(partners)
                 ? partners
                 : Array.isArray(partners?.partners)
@@ -431,13 +429,14 @@ export default function HomePage() {
               return visible.map((p) => (
                 <div
                   key={p.id}
-                  className="w-36 flex-shrink-0 flex flex-col items-center bg-background rounded-lg p-3 border border-border shadow-sm"
+                  /* important: min-w-0 so children can truncate inside flex containers */
+                  className="w-36 min-w-0 flex-shrink-0 flex flex-col items-center bg-background rounded-lg p-3 border border-border shadow-sm"
                 >
                   {p.logo ? (
                     <img
                       src={p.logo}
                       alt={p.name ?? "Partner logo"}
-                      className="h-10 object-contain mb-2"
+                      className="h-10 object-contain mb-2 max-w-full"
                       loading="lazy"
                     />
                   ) : (
@@ -446,7 +445,10 @@ export default function HomePage() {
                     </div>
                   )}
       
-                  <div className="text-sm font-medium text-center truncate">{p.name}</div>
+                  {/* truncation + full width so long names don't overflow */}
+                  <div className="text-sm font-medium text-center w-full truncate px-1">
+                    {p.name}
+                  </div>
                 </div>
               ));
             })()}
